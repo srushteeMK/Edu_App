@@ -75,11 +75,12 @@ export default class CustomSideBarMenu extends Component {
             docId: doc.id,
             image: doc.data().image
           });
-        });
+        })
       });
+     // console.log(this.state.image)
   };
 
-  componentDidMount() {
+  componentDidMount=()=>{
     const { userId } = this.state;
     this.fetchImage(userId);
     this.getUserProfile();
